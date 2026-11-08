@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b13">
+  <meta name="description" content="Rewind.PH — Living the Filipino 2000s. Log in. Look back. See what shaped us. Explore Filipino popular culture across body and self-image, technology, and globalization.">
+  <title>Rewind.PH — Living the Filipino 2000s</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23090b13'/%3E%3Cpath d='M25 24h34a18 18 0 0 1 0 36H42v16H25V24zm17 16v4h17a2 2 0 0 0 0-4H42z' fill='%23d7ff70'/%3E%3C/svg%3E">
+  <style>
+    :root{--bg:#090b13;--bg2:#0d1120;--panel:#11182a;--panel2:#151d32;--line:rgba(223,231,255,.12);--text:#f4f6ff;--muted:#a6aec7;--lime:#d7ff70;--pink:#ff77b7;--cyan:#72e2ff;--violet:#a99bff;--radius:22px;--max:1220px;--shadow:0 22px 70px rgba(0,0,0,.38)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 72% 5%,rgba(116,85,255,.12),transparent 32%),radial-gradient(ellipse at 0% 28%,rgba(65,205,225,.07),transparent 28%),var(--bg);color:var(--text);font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}body.modal-open{overflow:hidden}a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}.container{width:min(var(--max),calc(100% - 44px));margin-inline:auto}.mono{font-family:'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;font-size:.72rem;color:var(--muted)}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--lime);font-family:'DM Mono',monospace;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:'';width:26px;height:1px;background:currentColor}.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}.section-head h2{font-size:clamp(2rem,4.2vw,3.7rem);line-height:1.02;letter-spacing:-.06em;margin:13px 0 0;max-width:720px}.section-head p{color:var(--muted);max-width:390px;margin:0;font-size:.96rem}.btn{display:inline-flex;align-items:center;justify-content:center;gap:11px;border:1px solid transparent;border-radius:999px;padding:14px 20px;font-weight:800;font-size:.88rem;transition:.22s transform,.22s background,.22s border-color}.btn:hover{transform:translateY(-3px)}.btn-primary{background:var(--lime);color:#11170a;box-shadow:0 10px 30px rgba(215,255,112,.16)}.btn-primary:hover{background:#e6ff9f}.btn-ghost{border-color:var(--line);background:rgba(255,255,255,.035);color:var(--text)}.btn-ghost:hover{border-color:rgba(215,255,112,.55);background:rgba(215,255,112,.07)}.btn-small{padding:10px 14px;font-size:.78rem}.arrow{font-size:1.1rem;line-height:0}
+    /* Navigation */
+    .site-nav{position:sticky;top:0;z-index:30;background:rgba(9,11,19,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.06em;font-size:1.28rem}.brand-mark{width:35px;height:35px;border-radius:12px;background:var(--lime);color:#11170a;display:grid;place-items:center;font-size:1.05rem;font-weight:900;box-shadow:0 0 24px rgba(215,255,112,.16)}.brand span em{color:var(--lime);font-style:normal}.nav-links{display:flex;align-items:center;gap:27px;color:#c3c9db;font-size:.82rem;font-weight:700}.nav-links a:hover{color:var(--lime)}.nav-actions{display:flex;align-items:center;gap:10px}.menu-toggle{display:none;background:none;border:1px solid var(--line);color:var(--text);border-radius:12px;width:42px;height:42px}
+    /* Hero */
+    .hero{position:relative;overflow:hidden;padding:76px 0 70px;min-height:620px}.hero:before{content:'';position:absolute;width:560px;height:560px;right:-130px;top:-60px;border:1px solid rgba(169,155,255,.16);border-radius:50%;box-shadow:0 0 0 44px rgba(169,155,255,.025),0 0 0 88px rgba(169,155,255,.018),0 0 120px rgba(114,226,255,.06);pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:55px;position:relative;z-index:1}.hero h1{font-size:clamp(3rem,5.3vw,5rem);line-height:.94;letter-spacing:-.075em;margin:22px 0 24px;font-weight:800}.hero h1 .accent{color:var(--lime);display:block}.hero-tagline{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:800;letter-spacing:-.035em;color:#fff;margin:-5px 0 12px;line-height:1.35}.hero-copy{font-size:1.08rem;color:#bac2d8;max-width:570px;line-height:1.75}.hero-copy strong{color:#fff}.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.hero-meta{display:flex;align-items:center;gap:20px;margin-top:38px;color:var(--muted);font-size:.78rem}.hero-meta span{display:flex;align-items:center;gap:8px}.dot{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 12px var(--lime)}.hero-art{min-height:490px;position:relative;display:grid;place-items:center}.orbit{position:absolute;width:min(100%,470px);aspect-ratio:1;border:1px solid rgba(215,255,112,.18);border-radius:50%;transform:rotate(-19deg)}.orbit:before,.orbit:after{content:'';position:absolute;inset:34px;border:1px dashed rgba(114,226,255,.25);border-radius:50%}.orbit:after{inset:82px;border-style:solid;border-color:rgba(255,119,183,.2)}.hero-core{position:relative;width:320px;height:250px;border-radius:34px;background:linear-gradient(145deg,rgba(215,255,112,.22),rgba(114,226,255,.07) 48%,rgba(169,155,255,.15));border:1px solid rgba(255,255,255,.18);box-shadow:0 35px 100px rgba(0,0,0,.45),inset 0 1px rgba(255,255,255,.2);display:flex;flex-direction:column;justify-content:space-between;padding:24px;transform:rotate(4deg);backdrop-filter:blur(8px)}.hero-core:before{content:'REWIND';font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.22em;color:var(--lime)}.hero-core-title{display:block;width:100%;white-space:nowrap;font-size:clamp(1.65rem,3vw,2.4rem);font-weight:900;letter-spacing:-.075em;line-height:1}.hero-core-title span{color:var(--lime)}.hero-core-foot{display:flex;justify-content:space-between;align-items:end;color:#c3c9db;font-size:.65rem}.hero-core-foot b{font-family:'DM Mono',monospace;color:var(--cyan);font-weight:400}.float-card{position:absolute;width:150px;border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:8px;background:rgba(17,24,42,.86);box-shadow:var(--shadow);backdrop-filter:blur(12px)}.float-card img{width:100%;height:100px;object-fit:cover;border-radius:10px}.float-card figcaption{font-size:.66rem;color:#e6e9f5;padding:8px 3px 3px;font-weight:800}.float-one{top:35px;left:0;transform:rotate(-9deg)}.float-two{right:0;top:92px;transform:rotate(8deg)}.float-three{bottom:30px;left:28px;transform:rotate(5deg)}.float-label{position:absolute;right:10px;bottom:15px;color:var(--lime);font-family:'DM Mono',monospace;font-size:.7rem;letter-spacing:.1em;writing-mode:vertical-rl}
+    .stat-band{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.018)}.stat-grid{display:grid;grid-template-columns:repeat(4,1fr)}.stat{padding:23px 25px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{font-size:1.55rem;letter-spacing:-.06em}.stat span{display:block;color:var(--muted);font-size:.76rem;margin-top:4px}
+    /* Rooms */
+    .room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.room-card{position:relative;min-height:340px;padding:24px;border-radius:var(--radius);border:1px solid var(--line);overflow:hidden;background:linear-gradient(145deg,rgba(255,255,255,.06),rgba(255,255,255,.015));transition:.25s transform,.25s border-color}.room-card:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.3)}.room-card:after{content:'';position:absolute;width:260px;height:260px;border:1px solid var(--room-color);border-radius:50%;right:-100px;bottom:-130px;box-shadow:0 0 0 28px color-mix(in srgb,var(--room-color) 8%,transparent),0 0 0 58px color-mix(in srgb,var(--room-color) 5%,transparent)}.room-card .room-number{font-family:'DM Mono',monospace;color:var(--room-color);font-size:.72rem;letter-spacing:.15em}.room-card h3{font-size:1.65rem;letter-spacing:-.055em;line-height:1.05;margin:42px 0 10px;max-width:240px}.room-card p{color:var(--muted);font-size:.88rem;max-width:270px}.room-card .room-count{position:absolute;bottom:22px;left:24px;color:#d8deee;font-size:.73rem;font-family:'DM Mono',monospace;letter-spacing:.08em}.room-card .room-arrow{position:absolute;right:23px;bottom:20px;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--room-color);color:#111;font-weight:900;z-index:1}.room-visual{position:absolute;right:20px;top:58px;width:130px;height:120px;opacity:.8}.room-visual img{height:100%;width:100%;object-fit:cover;border-radius:14px;transform:rotate(6deg);border:1px solid rgba(255,255,255,.2);box-shadow:var(--shadow)}.room-visual img[alt*='Maris Racal']{object-position:center 10%}.room-visual figcaption{position:absolute;left:4px;right:4px;bottom:-17px;text-align:center;font-size:.58rem;font-family:'DM Mono',monospace;letter-spacing:.05em;color:#dce4f3;text-shadow:0 2px 8px #000}
+    /* Archive */
+    .archive{background:linear-gradient(180deg,transparent,rgba(255,255,255,.018),transparent)}.archive-toolbar{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:24px;flex-wrap:wrap}.filter-row{display:flex;gap:8px;flex-wrap:wrap}.filter-btn{border:1px solid var(--line);border-radius:999px;padding:9px 14px;background:transparent;color:#b9c1d7;font-size:.76rem;font-weight:800}.filter-btn.active,.filter-btn:hover{background:var(--lime);border-color:var(--lime);color:#11170a}.search-box{position:relative;min-width:220px}.search-box input{width:100%;background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:999px;padding:11px 16px 11px 38px;color:var(--text);outline:none;font-size:.8rem}.search-box input:focus{border-color:var(--lime)}.search-box:before{content:'⌕';position:absolute;left:15px;top:5px;font-size:1.3rem;color:var(--muted)}.artifact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.artifact-card{background:linear-gradient(145deg,#151d31,#0f1422);border:1px solid var(--line);border-radius:19px;overflow:hidden;transition:.22s transform,.22s border-color}.artifact-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.28)}.artifact-top{padding:17px 18px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.artifact-room{font-family:'DM Mono',monospace;font-size:.63rem;letter-spacing:.12em;text-transform:uppercase;color:var(--room-color)}.artifact-index{color:#707a96;font-family:'DM Mono',monospace;font-size:.68rem}.artifact-card h3{font-size:1.1rem;letter-spacing:-.045em;margin:0;padding:0 18px}.artifact-card .subtitle{font-size:.74rem;color:var(--muted);padding:5px 18px 14px;min-height:48px}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:0 10px}.comparison figure{margin:0;min-width:0}.comparison img{width:100%;height:150px;object-fit:cover;border-radius:10px;background:#252b3c}.comparison img.maris-preview{object-position:center 8%}.comparison figcaption{font-size:.67rem;line-height:1.35;color:#c4cadd;padding:7px 3px 3px;min-height:45px}.compare-label{font-family:'DM Mono',monospace;text-transform:uppercase;font-size:.58rem;letter-spacing:.1em;color:var(--room-color);display:block;margin-bottom:2px}.artifact-bottom{display:flex;align-items:center;justify-content:space-between;padding:13px 17px 16px;margin-top:7px;border-top:1px solid var(--line)}.artifact-bottom span{font-size:.68rem;color:var(--muted)}.text-link{border:0;background:none;color:var(--lime);font-size:.75rem;font-weight:900;padding:5px 0}.text-link:hover{text-decoration:underline}.empty-state{display:none;padding:50px 20px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:18px}
+    /* Timeline */
+    .timeline-wrap{position:relative;padding:24px 0 0}.timeline-line{height:2px;background:linear-gradient(90deg,var(--pink),var(--violet),var(--cyan),var(--lime));position:absolute;left:4%;right:4%;top:40px;opacity:.7}.timeline-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;position:relative}.timeline-item{padding-top:43px;position:relative}.timeline-dot{position:absolute;top:7px;left:0;width:16px;height:16px;border-radius:50%;background:var(--bg);border:4px solid var(--node-color);box-shadow:0 0 20px color-mix(in srgb,var(--node-color) 55%,transparent)}.timeline-item h3{font-size:1rem;margin:0 0 7px;letter-spacing:-.03em}.timeline-item p{font-size:.78rem;color:var(--muted);margin:0}.timeline-year{font-family:'DM Mono',monospace;color:var(--node-color);font-size:.68rem;letter-spacing:.12em;margin-bottom:8px;display:block}
+    /* Project lab */
+    .lab-section{background:linear-gradient(180deg,rgba(215,255,112,.025),transparent 28%,rgba(169,155,255,.025))}.smart-card{padding:32px;border:1px solid rgba(215,255,112,.24);border-radius:24px;background:linear-gradient(135deg,rgba(215,255,112,.08),rgba(255,255,255,.025));display:grid;grid-template-columns:.34fr .66fr;gap:26px;align-items:start}.smart-label{font-family:'DM Mono',monospace;color:var(--lime);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}.smart-card h3{font-size:1.55rem;line-height:1.08;letter-spacing:-.05em;margin:12px 0}.smart-card p{color:#d2d8e8;margin:0;font-size:.95rem}.smart-card strong{color:var(--lime)}.goal-metrics{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.goal-metrics span{border:1px solid rgba(215,255,112,.25);background:rgba(215,255,112,.07);color:#e7f6c3;padding:7px 10px;border-radius:999px;font-size:.68rem;font-family:'DM Mono',monospace}.plan-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:20px}.plan-step{border:1px solid var(--line);border-radius:17px;padding:17px;background:rgba(255,255,255,.025);min-height:190px}.plan-step .days{color:var(--lime);font-family:'DM Mono',monospace;font-size:.67rem;letter-spacing:.1em}.plan-step h4{margin:14px 0 7px;font-size:.94rem;letter-spacing:-.03em}.plan-step p{margin:0;color:var(--muted);font-size:.74rem}.plan-step .deliverable{margin-top:12px;padding-top:10px;border-top:1px solid var(--line);font-size:.68rem;color:#dce2f2}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.resource-card{border:1px solid var(--line);border-radius:17px;padding:20px;background:rgba(255,255,255,.025)}.resource-card .resource-icon{font-size:1.4rem}.resource-card h4{margin:10px 0 7px;font-size:.95rem}.resource-card p{color:var(--muted);font-size:.76rem;margin:0}.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:26px}.metric-card{border:1px solid var(--line);border-radius:17px;padding:19px;background:#101626}.metric-card b{display:block;font-size:1.65rem;color:var(--lime);letter-spacing:-.06em}.metric-card span{font-size:.72rem;color:var(--muted)}.risk-box{margin-top:24px;padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.02)}.risk-box h4{margin:0 0 12px}.risk-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.risk-list div{font-size:.75rem;color:var(--muted)}.risk-list b{display:block;color:#f2f4ff;margin-bottom:4px}
+    /* Reflection */
+    .reflection-card{position:relative;overflow:hidden;padding:44px;border-radius:26px;border:1px solid rgba(114,226,255,.2);background:radial-gradient(circle at 88% 18%,rgba(114,226,255,.15),transparent 32%),linear-gradient(130deg,#121a2d,#0e1321)}.reflection-card h2{font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.07em;line-height:1.02;max-width:690px;margin:15px 0}.reflection-card>p{max-width:700px;color:var(--muted)}.reflection-questions{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.question{padding:15px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.035);font-size:.8rem;color:#dbe1f1}.question b{display:block;color:var(--cyan);font-family:'DM Mono',monospace;font-size:.67rem;margin-bottom:7px}
+    /* Footer */
+    footer{padding:38px 0 45px;border-top:1px solid var(--line);margin-top:90px}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-copy{color:var(--muted);font-size:.73rem;max-width:520px}.footer-links{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.footer-links a,.footer-links button{color:#d7deef;font-size:.75rem;border:0;background:none;padding:0}.footer-links a:hover,.footer-links button:hover{color:var(--lime)}.github-link[hidden]{display:none}
+    /* Modal */
+    .modal-shell{position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;padding:22px;background:rgba(3,5,10,.84);backdrop-filter:blur(14px)}.modal-shell.open{display:flex}.modal{width:min(1050px,100%);max-height:min(90vh,900px);overflow:auto;border:1px solid rgba(255,255,255,.16);border-radius:24px;background:#0f1524;box-shadow:0 30px 100px rgba(0,0,0,.6)}.modal-header{position:sticky;top:0;z-index:2;display:flex;justify-content:space-between;align-items:start;gap:20px;padding:22px 25px;background:rgba(15,21,36,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.modal-header h2{font-size:1.6rem;letter-spacing:-.055em;margin:7px 0 0}.modal-close{width:38px;height:38px;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.05);color:#fff;font-size:1.2rem}.modal-content{padding:24px 25px 30px}.modal-intro{color:var(--muted);font-size:.88rem;max-width:800px}.detail-columns{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}.detail-side{border:1px solid var(--line);border-radius:17px;overflow:hidden;background:rgba(255,255,255,.02)}.detail-side-head{padding:16px 17px;border-bottom:1px solid var(--line)}.detail-side-head .tag{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--room-color)}.detail-side-head h3{margin:5px 0 2px;font-size:1.1rem}.detail-side-head p{margin:0;color:var(--muted);font-size:.74rem}.detail-gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:12px}.detail-gallery figure{margin:0;background:#0a0f1b;border-radius:10px;overflow:hidden}.detail-gallery img{width:100%;height:170px;object-fit:cover}.detail-side.maris-present .detail-gallery img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top}.detail-gallery figcaption{font-size:.68rem;color:#d0d7e8;line-height:1.4;padding:9px}.connection-box{margin-top:18px;padding:19px;border-radius:15px;background:rgba(215,255,112,.055);border:1px solid rgba(215,255,112,.18)}.connection-box b{display:block;color:var(--lime);font-family:'DM Mono',monospace;font-size:.67rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}.connection-box p{margin:0;color:#d7dfed;font-size:.83rem}
+    /* 3D Museum */
+    .museum-shell{position:fixed;inset:0;z-index:100;background:#060810;display:none}.museum-shell.open{display:block}.museum-topbar{position:absolute;z-index:4;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 18px;background:linear-gradient(180deg,rgba(5,7,13,.9),rgba(5,7,13,.22));pointer-events:none}.museum-topbar>*{pointer-events:auto}.museum-brand{font-weight:900;letter-spacing:-.05em;white-space:nowrap;text-transform:uppercase}.museum-brand span{color:var(--lime)}.museum-room-pill{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.12em;color:#dfe7f5;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.06)}.museum-exit,.museum-door-toggle{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;border-radius:999px;padding:9px 14px;font-size:.75rem;font-weight:800}.museum-door-toggle{border-color:rgba(215,255,112,.35);color:var(--lime)}.museum-stage{position:absolute;inset:0}.museum-stage canvas{display:block;width:100%;height:100%}.museum-hud{position:absolute;z-index:3;left:18px;bottom:18px;max-width:310px;padding:15px 17px;border:1px solid rgba(255,255,255,.14);border-radius:15px;background:rgba(7,10,18,.72);backdrop-filter:blur(14px);pointer-events:none}.museum-hud b{display:block;color:var(--lime);font-size:.75rem;margin-bottom:5px}.museum-hud span{font-size:.68rem;color:#c2cadb;line-height:1.5}.museum-room-nav{position:absolute;z-index:4;right:18px;bottom:18px;display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end;max-width:58vw}.room-jump{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:9px 12px;background:rgba(7,10,18,.76);color:#dbe2f2;font-size:.66rem;font-weight:800;backdrop-filter:blur(10px)}.room-jump.active{background:var(--lime);color:#11170a;border-color:var(--lime)}.room-jump.credits{border-color:rgba(114,226,255,.45);color:var(--cyan)}.crosshair{position:absolute;z-index:3;left:50%;top:50%;width:12px;height:12px;border:1px solid rgba(255,255,255,.8);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 12px rgba(255,255,255,.5);pointer-events:none}.museum-help{position:absolute;z-index:5;top:82px;left:50%;transform:translateX(-50%);padding:8px 13px;border-radius:999px;background:rgba(7,10,18,.7);border:1px solid rgba(255,255,255,.12);color:#cbd3e4;font-size:.66rem;white-space:nowrap;pointer-events:none}.mobile-pad{display:none;position:absolute;z-index:5;right:18px;bottom:75px;grid-template-columns:repeat(3,42px);gap:5px}.mobile-pad button{width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:rgba(8,11,20,.72);color:#fff;font-weight:900;touch-action:none}.mobile-pad .empty{visibility:hidden}.museum-fallback{position:absolute;inset:0;display:none;place-items:center;text-align:center;padding:30px;background:radial-gradient(circle at 50% 30%,rgba(169,155,255,.16),transparent 45%),#090d18}.museum-fallback.show{display:grid}.museum-fallback-inner{max-width:520px}.museum-fallback h2{font-size:2.2rem;letter-spacing:-.06em}.museum-fallback p{color:var(--muted)}
+
+    /* Group 2 identity and project credits */
+    .team-strip{padding:20px 0 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:linear-gradient(90deg,rgba(215,255,112,.035),rgba(114,226,255,.025),rgba(169,155,255,.035))}.team-strip-inner{display:flex;align-items:flex-start;gap:22px}.team-strip-label{flex:0 0 155px;color:var(--lime);font:500 .68rem 'DM Mono',monospace;letter-spacing:.14em;text-transform:uppercase;padding-top:7px}.team-chips{display:flex;flex-wrap:wrap;gap:8px}.team-chip{border:1px solid var(--line);border-radius:999px;padding:7px 11px;background:rgba(255,255,255,.035);color:#dce3f2;font-size:.72rem}.team-section{background:radial-gradient(ellipse at 50% 0%,rgba(114,226,255,.06),transparent 52%)}.about-intro{max-width:850px;color:#c3cbe0;margin:-5px 0 28px;font-size:.96rem;line-height:1.8}.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.team-card{position:relative;overflow:hidden;min-height:170px;padding:20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.055),rgba(255,255,255,.015))}.team-card:after{content:'';position:absolute;width:130px;height:130px;right:-58px;bottom:-66px;border:1px solid rgba(215,255,112,.22);border-radius:50%;box-shadow:0 0 0 18px rgba(215,255,112,.025)}.team-card.leader{border-color:rgba(215,255,112,.4);background:linear-gradient(145deg,rgba(215,255,112,.09),rgba(255,255,255,.02))}.team-avatar{width:38px;height:38px;display:grid;place-items:center;border-radius:13px;background:rgba(215,255,112,.12);border:1px solid rgba(215,255,112,.25);color:var(--lime);font:700 .75rem 'DM Mono',monospace;margin-bottom:16px}.team-card h3{font-size:1rem;letter-spacing:-.03em;margin:0 0 6px}.team-card p{margin:0;color:var(--muted);font-size:.72rem;line-height:1.5}.team-role{display:inline-block;margin-top:10px;color:var(--cyan);font:500 .61rem 'DM Mono',monospace;letter-spacing:.08em;text-transform:uppercase}.museum-door-toggle:focus-visible,.museum-exit:focus-visible,.room-jump:focus-visible{outline:2px solid var(--lime);outline-offset:3px}
+    @media(max-width:950px){.team-grid{grid-template-columns:repeat(3,1fr)}}
+    @media(max-width:700px){.hero-core{width:245px;height:215px;padding:17px}.hero-core-title{font-size:1.9rem}.team-strip-inner{display:block}.team-strip-label{margin-bottom:12px}.team-grid{grid-template-columns:repeat(2,1fr)}.museum-topbar{padding:10px;gap:7px}.museum-room-pill{display:none}.museum-door-toggle,.museum-exit{padding:8px 10px;font-size:.65rem}.museum-room-nav{right:10px;bottom:10px;left:auto;width:165px;max-width:165px;display:grid;grid-template-columns:1fr 1fr;gap:5px}.room-jump{padding:7px 9px;font-size:.56rem}.museum-help{top:66px;max-width:92%;white-space:normal;text-align:center}.museum-hud{left:10px;bottom:10px;max-width:135px;padding:10px}.mobile-pad{display:grid;right:10px;bottom:112px}.museum-brand{font-size:.8rem}}
+    @media(max-width:420px){.team-grid{grid-template-columns:1fr 1fr}.team-card{padding:15px;min-height:155px}.hero-core{width:225px;height:200px;padding:15px}.hero-core-title{font-size:1.68rem}.museum-room-nav{justify-content:stretch}.room-jump{font-size:.52rem;padding:7px 6px}}
+    @media(max-width:950px){.hero-grid{gap:25px}.hero-art{min-height:410px}.float-card{width:125px}.float-card img{height:84px}.room-grid{grid-template-columns:1fr 1fr}.artifact-grid{grid-template-columns:repeat(2,1fr)}.plan-grid{grid-template-columns:repeat(3,1fr)}.metrics-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:700px){.container{width:min(100% - 30px,var(--max))}.nav-inner{height:66px}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;padding:18px 22px 22px;background:#0c1120;border-bottom:1px solid var(--line);flex-direction:column;align-items:start;gap:18px}.nav-links.open{display:flex}.nav-actions>.btn{display:none}.menu-toggle{display:block}.hero{padding:54px 0 45px;min-height:unset}.hero-grid{grid-template-columns:1fr;gap:10px}.hero h1{font-size:clamp(2.25rem,10.5vw,3rem);line-height:.98;letter-spacing:-.07em}.hero-copy{font-size:.95rem}.hero-art{min-height:360px;margin-top:0}.hero-core{width:245px;height:215px;padding:17px}.hero-core-title{font-size:1.9rem}.orbit{width:330px}.float-card{width:112px}.float-card img{height:76px}.float-one{left:3px;top:20px}.float-two{right:0;top:55px}.float-three{left:5px;bottom:10px}.hero-meta{flex-wrap:wrap;gap:12px}.stat-grid{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.stat{padding:17px}.section{padding:72px 0}.section-head{display:block}.section-head p{margin-top:15px}.room-grid{grid-template-columns:1fr}.room-card{min-height:285px}.room-card h3{margin-top:25px}.artifact-grid{grid-template-columns:1fr}.comparison img{height:185px}.timeline-grid{grid-template-columns:1fr;gap:8px;padding-left:25px}.timeline-line{left:7px;right:auto;top:10px;bottom:10px;width:2px;height:auto;background:linear-gradient(180deg,var(--pink),var(--violet),var(--cyan),var(--lime))}.timeline-item{padding:0 0 15px 20px}.timeline-dot{top:3px;left:-25px}.smart-card{grid-template-columns:1fr;padding:24px}.plan-grid{grid-template-columns:1fr 1fr}.plan-step{min-height:170px}.resource-grid{grid-template-columns:1fr 1fr}.risk-list{grid-template-columns:1fr}.reflection-card{padding:27px}.reflection-questions{grid-template-columns:1fr}.footer-inner{display:block}.footer-links{margin-top:20px}.detail-columns{grid-template-columns:1fr}.detail-gallery img{height:150px}.modal-shell{padding:8px}.modal{max-height:95vh}.modal-header,.modal-content{padding:17px}.museum-hud{left:10px;bottom:10px;max-width:205px;padding:11px}.museum-room-nav{right:10px;bottom:10px;left:10px;display:flex;flex-wrap:wrap;justify-content:center;gap:5px}.room-jump{padding:7px 9px;font-size:.58rem}.museum-help{top:74px;max-width:92%;white-space:normal;text-align:center}.mobile-pad{display:grid;right:10px;bottom:110px}.museum-room-pill{display:none}}
+    @media(max-width:420px){.plan-grid,.resource-grid{grid-template-columns:1fr}.comparison img{height:155px}.detail-gallery{grid-template-columns:1fr 1fr}.hero-art{min-height:320px}.hero-core{width:225px;height:200px;padding:15px}.hero-core-title{font-size:1.68rem}.float-card{width:100px}.float-card img{height:68px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Rewind.PH home"><span class="brand-mark">R</span><span>Rewind<em>.PH</em></span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#rooms">The Museum</a><a href="#archive">Artifact Archive</a><a href="#timeline">Timeline</a><a href="#project-lab">Project Blueprint</a><a href="#about">About & Team</a><a href="#reflection">Reflect</a>
+      </div>
+      <div class="nav-actions">
+        <button class="btn btn-primary btn-small" data-enter-museum>Enter Museum <span class="arrow">↗</span></button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">A Filipino pop culture time capsule</span>
+          <h1>Living the<br><span class="accent">Filipino 2000s</span></h1>
+          <p class="hero-tagline">Log in. Look back. See what shaped us.</p>
+          <p class="hero-copy"><strong>Rewind.PH</strong> is an interactive digital museum tracing how Filipino popular culture travels through generations. Step from the 2000s into the present and discover what changed, what stayed, and what continues to shape the way we live.</p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" data-enter-museum>Walk the Museum <span class="arrow">↗</span></button>
+            <a class="btn btn-ghost" href="#archive">Browse the Artifacts <span class="arrow">↓</span></a>
+          </div>
+          <div class="hero-meta"><span><i class="dot"></i> 3 immersive exhibition rooms</span><span>15 past-to-present pairings</span><span>Philippine perspective</span></div>
+        </div>
+        <div class="hero-art" aria-label="A collage preview of the Rewind.PH museum">
+          <div class="orbit"></div>
+          <figure class="float-card float-one"><img src="assets/body/jolina-maris-then-01-jolina-magdangal.webp" alt="Jolina Magdangal archival portrait"><figcaption>THE STYLE ICON</figcaption></figure>
+          <figure class="float-card float-two"><img src="assets/technology/nokia-iphone-then-01-img-4092.webp" alt="Nokia 5110 mobile phone"><figcaption>THE FIRST CONNECTIONS</figcaption></figure>
+          <figure class="float-card float-three"><img src="assets/globalization/mtv-spotify-now-01-spt1.webp" alt="Spotify on a smartphone"><figcaption>THE WORLD IN YOUR POCKET</figcaption></figure>
+          <div class="hero-core"><div class="hero-core-title">RE<span>WIND</span>.PH</div><div class="hero-core-foot"><span>2000—2026<br>POPULAR CULTURE</span><b>VOL. 01</b></div></div>
+          <div class="float-label">SCROLL THROUGH TIME ↘</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-strip" aria-label="Group 2 project team">
+      <div class="container team-strip-inner"><div class="team-strip-label">Created by Group 2</div><div class="team-chips">
+        <span class="team-chip">Conrad Santos · Leader / Software Developer</span><span class="team-chip">Christian Borja · Artifacts Researcher</span><span class="team-chip">Carl Josef Buizon · Artifacts Researcher</span><span class="team-chip">Charlene Padua · Artifacts Researcher</span><span class="team-chip">Clarence Joy Garcia · Graphic Designer</span><span class="team-chip">Clark Maverick Olinares · Artifacts Researcher</span><span class="team-chip">Connie Yadao · Artifacts Researcher</span>
+      </div></div>
+    </section>
+
+    <div class="stat-band"><div class="container stat-grid">
+      <div class="stat"><b>03</b><span>Curated exhibition rooms</span></div><div class="stat"><b>15</b><span>Then-and-now comparisons</span></div><div class="stat"><b>100%</b><span>Photographs captioned</span></div><div class="stat"><b>2000–26</b><span>Culture across generations</span></div>
+    </div></div>
+
+    <section class="section" id="rooms">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Choose your exhibition</span><h2>Three rooms.<br>One cultural timeline.</h2></div><p>Explore each dimension of popular culture as a living conversation between the past and the present.</p></div>
+        <div class="room-grid" id="roomCards">
+          <article class="room-card" style="--room-color:var(--pink)"><div class="room-number">ROOM 01 / IDENTITY</div><div class="room-visual"><img src="assets/body/jolina-maris-now-01-maris-racal.webp" alt="Maris Racal contemporary fashion portrait"><figcaption>MARIS RACAL · NOW</figcaption></div><h3>Body &<br>Self-Image</h3><p>Celebrity images, hairstyles, fashion, and the way young people express who they are.</p><div class="room-count">05 ARTIFACT PAIRINGS</div><button class="room-arrow" data-filter-room="body" aria-label="Browse Body and Self-Image">↗</button></article>
+          <article class="room-card" style="--room-color:var(--lime)"><div class="room-number">ROOM 02 / INNOVATION</div><div class="room-visual"><img src="assets/technology/nokia-iphone-now-01-iphone-18.webp" alt="iPhone 18 product image"><figcaption>IPHONE 18 · NOW</figcaption></div><h3>Technology</h3><p>Communication, computers, gaming, and entertainment tools that changed everyday life.</p><div class="room-count">05 ARTIFACT PAIRINGS</div><button class="room-arrow" data-filter-room="technology" aria-label="Browse Technology">↗</button></article>
+          <article class="room-card" style="--room-color:var(--cyan)"><div class="room-number">ROOM 03 / CONNECTION</div><div class="room-visual"><img src="assets/globalization/foreign-films-marvel-now-01-mrvl1.webp" alt="Marvel Studios theatrical event"><figcaption>MARVEL STUDIOS · NOW</figcaption></div><h3>Globalization</h3><p>Music, food, films, stories, and businesses moving across borders and into local life.</p><div class="room-count">05 ARTIFACT PAIRINGS</div><button class="room-arrow" data-filter-room="globalization" aria-label="Browse Globalization">↗</button></article>
+        </div>
+        <div style="display:flex;justify-content:center;margin-top:28px"><button class="btn btn-primary" data-enter-museum>Enter the 3D Gallery <span class="arrow">↗</span></button></div>
+      </div>
+    </section>
+
+    <section class="section archive" id="archive">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Curated artifacts / 001–015</span><h2>Past meets present.</h2></div><p>Every artifact pairing opens into an expanded gallery with additional images, individual captions, context, and a short interpretation of the cultural shift.</p></div>
+        <div class="archive-toolbar">
+          <div class="filter-row" id="filters"><button class="filter-btn active" data-filter="all">All artifacts · 15</button><button class="filter-btn" data-filter="body">Body & Self-Image</button><button class="filter-btn" data-filter="technology">Technology</button><button class="filter-btn" data-filter="globalization">Globalization</button></div>
+          <label class="search-box"><input id="artifactSearch" type="search" placeholder="Search an artifact…" aria-label="Search artifacts"></label>
+        </div>
+        <div class="artifact-grid" id="artifactGrid"></div>
+        <div class="empty-state" id="emptyState">No artifacts match that search. Try another name or category.</div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">A quick trip through time</span><h2>Culture never stands still.</h2></div><p>The museum connects earlier influences, the 2000s cultural landscape, and the media habits shaping the present.</p></div>
+        <div class="timeline-wrap"><div class="timeline-line"></div><div class="timeline-grid">
+          <article class="timeline-item" style="--node-color:var(--pink)"><i class="timeline-dot"></i><span class="timeline-year">1994–1999</span><h3>Foundations</h3><p>Late-1990s devices, celebrity images, and entertainment formats become important precursors to the next decade.</p></article>
+          <article class="timeline-item" style="--node-color:#c58dff"><i class="timeline-dot"></i><span class="timeline-year">2000–2010</span><h3>The 2000s</h3><p>Television, music videos, mobile phones, home computers, and global brands shape everyday popular culture.</p></article>
+          <article class="timeline-item" style="--node-color:var(--cyan)"><i class="timeline-dot"></i><span class="timeline-year">2010–2019</span><h3>Always Connected</h3><p>Social platforms, streaming, smartphones, and on-demand entertainment accelerate cultural exchange.</p></article>
+          <article class="timeline-item" style="--node-color:#a5e5a0"><i class="timeline-dot"></i><span class="timeline-year">2020–2025</span><h3>Creator Culture</h3><p>Short-form video, online personalities, hybrid gaming, and global fandoms reshape influence and participation.</p></article>
+          <article class="timeline-item" style="--node-color:var(--lime)"><i class="timeline-dot"></i><span class="timeline-year">2026 / NOW</span><h3>Culture in Motion</h3><p>AI-assisted media, connected devices, and personalized platforms continue to redefine what popular culture can be.</p></article>
+        </div></div>
+        <p class="mono" style="margin-top:25px">Curator's note: selected late-1990s artifacts are shown as roots whose influence carried into the 2000s.</p>
+      </div>
+    </section>
+
+    <section class="section lab-section" id="project-lab">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Behind the experience</span><h2>The project blueprint.</h2></div><p>The museum is also a project-management output: goals, work sequence, resources, quality checks, and measurable success indicators are made visible.</p></div>
+        <div class="smart-card">
+          <div><span class="smart-label">SMART GOAL / PROJECT TARGET</span><h3>From concept to a testable digital museum.</h3></div>
+          <div><p><strong>Within 15 working days from project approval</strong>, the team will design, build, test, and publish a responsive virtual museum containing <strong>3 curated exhibition rooms</strong>, at least <strong>15 past-to-present artifact comparisons</strong>, and captions and alternative text for <strong>100% of displayed photographs</strong>. The museum will be tested with at least <strong>20 users</strong>, targeting at least <strong>90% successful task completion</strong> and an average visitor satisfaction rating of <strong>4.0 out of 5</strong> or higher.</p><div class="goal-metrics"><span>SPECIFIC · 3 ROOMS</span><span>MEASURABLE · 15 PAIRINGS</span><span>ACHIEVABLE · WEB TOOLS</span><span>RELEVANT · POP CULTURE</span><span>TIME-BOUND · 15 WORKING DAYS</span></div></div>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-step"><span class="days">DAY 01–02</span><h4>Research & Curate</h4><p>Validate artifact names, timelines, descriptions, image permissions, and the then-versus-now relationship.</p><div class="deliverable">DELIVERABLE: approved content inventory</div></article>
+          <article class="plan-step"><span class="days">DAY 03–04</span><h4>Prepare Assets</h4><p>Sort the uploaded files, optimize images, write captions and alt text, and prepare a media manifest.</p><div class="deliverable">DELIVERABLE: captioned asset library</div></article>
+          <article class="plan-step"><span class="days">DAY 05–07</span><h4>Design the Museum</h4><p>Map visitor journeys, create the visual system, design room layouts, and prototype the interface.</p><div class="deliverable">DELIVERABLE: approved UI / gallery plan</div></article>
+          <article class="plan-step"><span class="days">DAY 08–11</span><h4>Build & Integrate</h4><p>Develop the responsive site, 3D gallery, artifact viewer, search, navigation, and project blueprint.</p><div class="deliverable">DELIVERABLE: working museum build</div></article>
+          <article class="plan-step"><span class="days">DAY 12–15</span><h4>Test & Launch</h4><p>Run device, accessibility, content, and user tests; fix issues; publish and document the project.</p><div class="deliverable">DELIVERABLE: live site + evaluation report</div></article>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card"><div class="resource-icon">👥</div><h4>Human resources</h4><p>Project lead; content researchers / curators; UI designer; web developer; media editor; QA testers; teacher-adviser; and at least 20 visitor-test participants.</p></article>
+          <article class="resource-card"><div class="resource-icon">💻</div><h4>Tools & technology</h4><p>Laptop or desktop, smartphone, internet access, code editor, HTML/CSS/JavaScript, Three.js, browser developer tools, Git, and GitHub Pages.</p></article>
+          <article class="resource-card"><div class="resource-icon">🗂️</div><h4>Materials & content</h4><p>Uploaded artifact ZIP files, image captions, verified historical notes, project brief, source acknowledgements, design references, testing checklist, and user feedback form.</p></article>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-card"><b>3 / 3</b><span>Exhibition rooms complete</span></div><div class="metric-card"><b>15 / 15</b><span>Artifact comparisons published</span></div><div class="metric-card"><b>100%</b><span>Images captioned and described</span></div><div class="metric-card"><b>4.0 / 5</b><span>Target visitor satisfaction</span></div>
+        </div>
+        <div class="risk-box"><h4>Quality assurance & risk response</h4><div class="risk-list"><div><b>Slow loading / large files</b>Compress images, lazy-load galleries, and test on mobile data before launch.</div><div><b>Historical inaccuracies</b>Use a content-review checklist and label pre-2000 artifacts as cultural precursors where appropriate.</div><div><b>Device or browser issues</b>Provide a responsive artifact archive as a fallback if the 3D experience is unavailable.</div></div></div>
+      </div>
+    </section>
+
+    <section class="section team-section" id="about">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">About the project / Group 2</span><h2>Meet the minds<br>behind the rewind.</h2></div><p>Rewind.PH is a student-built cultural time capsule that connects Filipino popular culture across generations through research, visual storytelling, and an immersive digital exhibition.</p></div>
+        <p class="about-intro">Our team brings together software development, graphic design, and artifact research to create an accessible virtual museum. Each member contributes to documenting the past, interpreting the present, and presenting the connections in a clear and engaging visitor experience.</p>
+        <div class="team-grid">
+          <article class="team-card leader"><div class="team-avatar">CS</div><h3>Conrad Santos</h3><p>Leads the team and oversees the website architecture, implementation, and interactive museum experience.</p><span class="team-role">Leader · Software Developer</span></article>
+          <article class="team-card"><div class="team-avatar">CB</div><h3>Christian Borja</h3><p>Researches, checks, and organizes the historical and contemporary artifacts.</p><span class="team-role">Artifacts Researcher</span></article>
+          <article class="team-card"><div class="team-avatar">CJB</div><h3>Carl Josef Buizon</h3><p>Researches artifact context and supports the then-and-now comparisons.</p><span class="team-role">Artifacts Researcher</span></article>
+          <article class="team-card"><div class="team-avatar">CP</div><h3>Charlene Padua</h3><p>Researches cultural references and helps prepare clear exhibit information.</p><span class="team-role">Artifacts Researcher</span></article>
+          <article class="team-card"><div class="team-avatar">CJG</div><h3>Clarence Joy Garcia</h3><p>Shapes the visual identity, exhibit graphics, and overall presentation style.</p><span class="team-role">Graphic Designer</span></article>
+          <article class="team-card"><div class="team-avatar">CMO</div><h3>Clark Maverick Olinares</h3><p>Researches and verifies artifact details, dates, and cultural connections.</p><span class="team-role">Artifacts Researcher</span></article>
+          <article class="team-card"><div class="team-avatar">CY</div><h3>Connie Yadao</h3><p>Researches exhibit materials and supports the collection's captions and context.</p><span class="team-role">Artifacts Researcher</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reflection">
+      <div class="container">
+        <div class="reflection-card"><span class="eyebrow">The visitor reflection corner</span><h2>What does the past tell us about who we are now?</h2><p>Popular culture is more than trends. It reflects identity, technology, access, creativity, and the ways Filipino communities connect with the world.</p><div class="reflection-questions"><div class="question"><b>01 / IDENTITY</b>How have beauty standards and fashion trends changed, and what influences them today?</div><div class="question"><b>02 / TECHNOLOGY</b>Which technological change has most transformed the way you communicate or spend your free time?</div><div class="question"><b>03 / GLOBAL CONNECTIONS</b>How can global trends influence Filipino culture while local identity remains meaningful?</div></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="container footer-inner"><div><a class="brand" href="#top"><span class="brand-mark">R</span><span>Rewind<em>.PH</em></span></a><p class="footer-copy">A student-curated digital museum about Filipino popular culture, tracing the connections between the 2000s and today. Visual materials are presented for educational and exhibition purposes; retain source acknowledgements and verify usage permissions before public release.</p></div><div class="footer-links"><a href="#rooms">Explore rooms</a><a href="#project-lab">Project plan</a><a href="#about">About & Team</a><a href="#top">Back to top ↑</a><a class="github-link" id="githubLink" href="#" target="_blank" rel="noopener" hidden>GitHub repository ↗</a></div></div></footer>
+
+  <div class="modal-shell" id="artifactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modal-header"><div><span class="eyebrow" id="modalEyebrow">Artifact / Detail</span><h2 id="modalTitle">Artifact title</h2></div><button class="modal-close" id="modalClose" aria-label="Close artifact details">×</button></div><div class="modal-content" id="modalContent"></div></div></div>
+
+  <div class="museum-shell" id="museumShell" aria-label="Rewind.PH futuristic virtual museum with automatic glass entrance and Group 2 credits wall">
+    <div class="museum-topbar"><div class="museum-brand">REWIND<span>.PH</span></div><div class="museum-room-pill" id="museumRoomPill">LOBBY / WELCOME</div><div style="display:flex;align-items:center;gap:8px"><button class="museum-door-toggle" id="doorToggle" aria-pressed="true">Doors: Open</button><button class="museum-exit" id="museumExit">Exit Museum ✕</button></div></div>
+    <div class="museum-stage" id="museumStage"></div><div class="crosshair" id="crosshair"></div>
+    <div class="museum-help" id="museumHelp">W A S D / ARROWS TO MOVE · MOUSE TO LOOK · CLICK GLASS DOORS TO TOGGLE · CLICK ARTWORK TO OPEN</div>
+    <div class="museum-hud"><b id="museumHudTitle">WELCOME TO REWIND.PH</b><span id="museumHudText">Move through the exhibition hall and select any framed artifact to compare the past with the present.</span></div>
+    <div class="museum-room-nav"><button class="room-jump active" data-jump-room="0">01 · BODY</button><button class="room-jump" data-jump-room="1">02 · TECH</button><button class="room-jump" data-jump-room="2">03 · GLOBAL</button><button class="room-jump credits" id="creditsJump">GROUP 2 · CREDITS</button></div>
+    <div class="mobile-pad" id="mobilePad"><button class="empty">·</button><button data-key="w">↑</button><button class="empty">·</button><button data-key="a">←</button><button data-key="s">↓</button><button data-key="d">→</button></div>
+    <div class="museum-fallback" id="museumFallback"><div class="museum-fallback-inner"><span class="eyebrow">Alternative museum view</span><h2>Let's explore the collection.</h2><p>Your browser could not start the optional 3D gallery. The complete museum archive is still available with all 15 artifact comparisons and their captioned images.</p><button class="btn btn-primary" id="fallbackBrowse">Browse the artifact archive ↓</button></div></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="data.js"></script>
+  <script>
+    (() => {
+      const DATA = window.REWIND_DATA;
+      const $ = (s, root=document) => root.querySelector(s);
+      const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+      const roomNames = {body:'Body & Self-Image',technology:'Technology',globalization:'Globalization'};
+      const roomAccents = {body:'#ff77b7',technology:'#b8f36b',globalization:'#72e2ff'};
+      let activeFilter = 'all';
+
+      // Optional GitHub repository URL: paste the team's repository URL here after creating it.
+      const SITE_CONFIG = { githubUrl: '' };
+      if (SITE_CONFIG.githubUrl) { const link=$('#githubLink'); link.href=SITE_CONFIG.githubUrl; link.hidden=false; }
+
+      function esc(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+      function cardTemplate(a,index){
+        const color=roomAccents[a.room];
+        const thenImg=a.thenImages[0], nowImg=a.nowImages[0];
+        return `<article class="artifact-card" style="--room-color:${color}">
+          <div class="artifact-top"><span class="artifact-room">${esc(a.roomLabel)}</span><span class="artifact-index">${String(index+1).padStart(3,'0')} / 015</span></div>
+          <h3>${esc(a.title)}</h3><div class="subtitle">${esc(a.subtitle)}</div>
+          <div class="comparison">
+            <figure><img src="${esc(thenImg.src)}" alt="${esc(thenImg.alt)}" loading="lazy"><figcaption><span class="compare-label">THEN · ${esc(a.then.name)}</span>${esc(thenImg.caption)}</figcaption></figure>
+            <figure><img class="${a.id==='jolina-maris'?'maris-preview':''}" src="${esc(nowImg.src)}" alt="${esc(nowImg.alt)}" loading="lazy"><figcaption><span class="compare-label">NOW · ${esc(a.now.name)}</span>${esc(nowImg.caption)}</figcaption></figure>
+          </div>
+          <div class="artifact-bottom"><span>${a.thenImages.length+a.nowImages.length} captioned images</span><button class="text-link" data-open-artifact="${esc(a.id)}">Explore artifact ↗</button></div>
+        </article>`;
+      }
+      function renderArtifacts(){
+        const q=$('#artifactSearch').value.trim().toLowerCase();
+        const filtered=DATA.artifacts.filter(a=>(activeFilter==='all'||a.room===activeFilter)&&(`${a.title} ${a.then.name} ${a.now.name} ${a.subtitle}`).toLowerCase().includes(q));
+        $('#artifactGrid').innerHTML=filtered.map(a=>cardTemplate(a,DATA.artifacts.indexOf(a))).join('');
+        $('#emptyState').style.display=filtered.length?'none':'block';
+      }
+      renderArtifacts();
+      $('#filters').addEventListener('click',e=>{const b=e.target.closest('[data-filter]');if(!b)return;activeFilter=b.dataset.filter;$$('.filter-btn').forEach(x=>x.classList.toggle('active',x===b));renderArtifacts();});
+      $('#artifactSearch').addEventListener('input',renderArtifacts);
+      $('#artifactGrid').addEventListener('click',e=>{const b=e.target.closest('[data-open-artifact]');if(b)openArtifact(b.dataset.openArtifact);});
+      $$('[data-filter-room]').forEach(b=>b.addEventListener('click',()=>{activeFilter=b.dataset.filterRoom;$$('.filter-btn').forEach(x=>x.classList.toggle('active',x.dataset.filter===activeFilter));renderArtifacts();document.querySelector('#archive').scrollIntoView({behavior:'smooth'});}));
+
+      function gallerySide(side,a){
+        const data=a[side+'Images'];
+        return `<section class="detail-side${a.id==='jolina-maris'&&side==='now'?' maris-present':''}" style="--room-color:${roomAccents[a.room]}"><div class="detail-side-head"><span class="tag">${side==='then'?'THEN / EARLIER INFLUENCE':'NOW / PRESENT DAY'}</span><h3>${esc(a[side].name)}</h3><p>${esc(a[side].era)}</p></div><div class="detail-gallery">${data.map(img=>`<figure><img src="${esc(img.src)}" alt="${esc(img.alt)}" loading="lazy"><figcaption>${esc(img.caption)}</figcaption></figure>`).join('')}</div><div style="padding:0 17px 17px;color:#c7cfdf;font-size:.75rem">${esc(a[side].description)}</div></section>`;
+      }
+      function openArtifact(id){
+        const a=DATA.artifacts.find(x=>x.id===id);if(!a)return;
+        $('#modalEyebrow').textContent=`${a.roomLabel} / ${a.then.era} → ${a.now.era}`;
+        $('#modalTitle').textContent=a.title;
+        $('#modalContent').innerHTML=`<p class="modal-intro">${esc(a.subtitle)}</p><div class="detail-columns">${gallerySide('then',a)}${gallerySide('now',a)}</div><div class="connection-box"><b>What changed — and what stayed?</b><p>${esc(a.connection)}</p></div>`;
+        $('#artifactModal').classList.add('open');document.body.classList.add('modal-open');$('#modalClose').focus();
+      }
+      function closeArtifact(){ $('#artifactModal').classList.remove('open');document.body.classList.remove('modal-open'); }
+      $('#modalClose').addEventListener('click',closeArtifact);
+      $('#artifactModal').addEventListener('click',e=>{if(e.target===$('#artifactModal'))closeArtifact();});
+      document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeArtifact();if($('#museumShell').classList.contains('open')&&document.pointerLockElement)document.exitPointerLock();}});
+
+      // Mobile navigation menu.
+      $('#menuToggle').addEventListener('click',()=>$('#navLinks').classList.toggle('open'));
+      $$('#navLinks a').forEach(a=>a.addEventListener('click',()=>$('#navLinks').classList.remove('open')));
+
+      // 3D gallery: optional Three.js scene with a full archive fallback.
+      const shell=$('#museumShell'),stage=$('#museumStage'),fallback=$('#museumFallback');
+      let renderer,scene,camera,raycaster,boardMeshes=[],doorMeshes=[],doorGroups={},raf=0,initialized=false,yaw=0,pitch=0,lastTime=0;
+      let doorsOpen=false,doorProgress=0,creditsFocus=false,lastTouchHandled=0;
+      const keys={};
+      const roomZones=[{start:2,end:-20,id:'body',title:'BODY & SELF-IMAGE',desc:'Celebrity images, hairstyles, and fashion as expressions of identity.'},{start:-22,end:-44,id:'technology',title:'TECHNOLOGY',desc:'Devices and platforms that transformed communication, work, and play.'},{start:-46,end:-68,id:'globalization',title:'GLOBALIZATION',desc:'Music, food, films, stories, and businesses crossing borders.'}];
+      const teamMembers=[
+        {name:'Conrad Santos',role:'Leader · Software Developer'},
+        {name:'Christian Borja',role:'Artifacts Researcher'},
+        {name:'Carl Josef Buizon',role:'Artifacts Researcher'},
+        {name:'Charlene Padua',role:'Artifacts Researcher'},
+        {name:'Clarence Joy Garcia',role:'Graphic Designer'},
+        {name:'Clark Maverick Olinares',role:'Artifacts Researcher'},
+        {name:'Connie Yadao',role:'Artifacts Researcher'}
+      ];
+      function canvasCover(ctx,img,x,y,w,h,focusX=.5,focusY=.5){const iw=img.naturalWidth||img.width,ih=img.naturalHeight||img.height;const scale=Math.max(w/iw,h/ih);const sw=w/scale,sh=h/scale,sx=(iw-sw)*Math.max(0,Math.min(1,focusX)),sy=(ih-sh)*Math.max(0,Math.min(1,focusY));ctx.drawImage(img,sx,sy,sw,sh,x,y,w,h);}
+      function makeBoardTexture(a){
+        const canvas=document.createElement('canvas');canvas.width=1200;canvas.height=760;const ctx=canvas.getContext('2d');
+        const grad=ctx.createLinearGradient(0,0,1200,760);grad.addColorStop(0,'#17233b');grad.addColorStop(1,'#090e19');ctx.fillStyle=grad;ctx.fillRect(0,0,1200,760);
+        ctx.fillStyle=roomAccents[a.room];ctx.fillRect(0,0,1200,12);
+        ctx.fillStyle='#9eabc4';ctx.font='500 25px monospace';ctx.fillText(a.roomLabel.toUpperCase(),42,65);
+        ctx.fillStyle='#f5f7ff';ctx.font='700 44px Arial';ctx.fillText(a.title.length>29?a.title.slice(0,27)+'…':a.title,42,122);
+        const boxes=[{x:42,label:'THEN',name:a.then.name,entry:a.thenImages[0],y:168},{x:618,label:'NOW',name:a.now.name,entry:a.nowImages[0],y:168}];
+        boxes.forEach((b,idx)=>{
+          ctx.fillStyle=idx===0?'#ffb1d4':'#d9ff84';ctx.font='600 20px monospace';ctx.fillText(b.label,b.x,b.y);
+          ctx.fillStyle='#ffffff';ctx.font='700 28px Arial';ctx.fillText(b.name.length>24?b.name.slice(0,22)+'…':b.name,b.x,b.y+38);
+          const img=new Image();img.onload=()=>{ctx.save();ctx.beginPath();ctx.roundRect(b.x,b.y+58,535,365,14);ctx.clip();canvasCover(ctx,img,b.x,b.y+58,535,365,.5,(a.id==='jolina-maris'&&idx===1)?0.02:.5);ctx.restore();ctx.fillStyle='rgba(4,8,16,.88)';ctx.fillRect(b.x,b.y+365,535,58);ctx.fillStyle='#e7edf9';ctx.font='18px Arial';const cap=b.entry.caption.length>58?b.entry.caption.slice(0,55)+'…':b.entry.caption;ctx.fillText(cap,b.x+14,b.y+400);texture.needsUpdate=true;};img.src=b.entry.src;
+        });
+        ctx.fillStyle='rgba(255,255,255,.1)';ctx.fillRect(42,680,1116,1);ctx.fillStyle='#aab5ce';ctx.font='17px monospace';ctx.fillText('SELECT THIS EXHIBIT TO OPEN THE FULL CAPTIONED GALLERY',42,720);
+        const texture=new THREE.CanvasTexture(canvas);texture.needsUpdate=true;return texture;
+      }
+      function addWall(x,z,length){const wall=new THREE.Mesh(new THREE.BoxGeometry(.35,9.4,length),new THREE.MeshStandardMaterial({color:0x11192a,roughness:.9,metalness:.08}));wall.position.set(x,4.7,z);scene.add(wall);}
+      function addCeilingAndLighting(){
+        const ceiling=new THREE.Mesh(new THREE.BoxGeometry(18,.34,88),new THREE.MeshStandardMaterial({color:0x11182a,roughness:.82,metalness:.18}));ceiling.position.set(0,9.35,-30);scene.add(ceiling);
+        const trimMat=new THREE.MeshStandardMaterial({color:0x293650,metalness:.42,roughness:.42});
+        [-7.5,7.5].forEach(x=>{const beam=new THREE.Mesh(new THREE.BoxGeometry(.12,.18,86),trimMat);beam.position.set(x,9.12,-30);scene.add(beam);});
+        const panelMat=new THREE.MeshStandardMaterial({color:0xfff4e4,emissive:0xffe7c9,emissiveIntensity:.78,roughness:.48});
+        [7,-7,-21,-35,-49,-63].forEach(z=>[-5.3,5.3].forEach(x=>{
+          const panel=new THREE.Mesh(new THREE.BoxGeometry(2.35,.055,3.3),panelMat);panel.position.set(x,9.145,z);scene.add(panel);
+          const soft=new THREE.PointLight(0xffecd5,.92,17,2);soft.position.set(x,8.15,z);scene.add(soft);
+        }));
+        const centerStrip=new THREE.Mesh(new THREE.BoxGeometry(.7,.045,82),new THREE.MeshStandardMaterial({color:0xd8e7ff,emissive:0x9bbcff,emissiveIntensity:.22,roughness:.5}));centerStrip.position.set(0,9.145,-30);scene.add(centerStrip);
+      }
+      function addPortal(z,color,label){
+        const mat=new THREE.MeshStandardMaterial({color:new THREE.Color(color),emissive:new THREE.Color(color),emissiveIntensity:.32,metalness:.25,roughness:.38});
+        const postGeo=new THREE.BoxGeometry(.22,7.1,.22),beamGeo=new THREE.BoxGeometry(17.7,.22,.22);
+        [-8.7,8.7].forEach(x=>{const p=new THREE.Mesh(postGeo,mat);p.position.set(x,3.55,z);scene.add(p);});
+        const beam=new THREE.Mesh(beamGeo,mat);beam.position.set(0,7.1,z);scene.add(beam);
+        const signCanvas=document.createElement('canvas');signCanvas.width=900;signCanvas.height=180;const c=signCanvas.getContext('2d');c.fillStyle='#0c1220';c.fillRect(0,0,900,180);c.fillStyle=color;c.fillRect(0,0,12,180);c.fillStyle='#f5f7ff';c.font='700 55px Arial';c.fillText(label,40,90);c.fillStyle='#a9b5cc';c.font='24px monospace';c.fillText('REWIND.PH / EXHIBITION',42,135);const tex=new THREE.CanvasTexture(signCanvas);const sign=new THREE.Mesh(new THREE.PlaneGeometry(5.5,1.1),new THREE.MeshBasicMaterial({map:tex,transparent:false}));sign.position.set(0,6.1,z+.15);scene.add(sign);
+      }
+      function addEntrance(){
+        const z=5.35;
+        const frameMat=new THREE.MeshStandardMaterial({color:0x71839d,metalness:.78,roughness:.22});
+        const glassMat=new THREE.MeshPhysicalMaterial({color:0xb9e8ff,metalness:.08,roughness:.12,transparent:true,opacity:.25,transmission:.38,thickness:.06,side:THREE.DoubleSide});
+        const fixedGlass=new THREE.MeshPhysicalMaterial({color:0x91b7d8,metalness:.12,roughness:.16,transparent:true,opacity:.16,transmission:.42,thickness:.04,side:THREE.DoubleSide});
+        const postGeo=new THREE.BoxGeometry(.13,4.55,.16);
+        [-7.1,7.1].forEach(x=>{const post=new THREE.Mesh(postGeo,frameMat);post.position.set(x,2.275,z);scene.add(post);});
+        const header=new THREE.Mesh(new THREE.BoxGeometry(14.2,.16,.18),frameMat);header.position.set(0,4.55,z);scene.add(header);
+        const sill=new THREE.Mesh(new THREE.BoxGeometry(14.2,.09,.24),frameMat);sill.position.set(0,.045,z);scene.add(sill);
+        [-6.05,6.05].forEach(x=>{const pane=new THREE.Mesh(new THREE.BoxGeometry(2.0,4.35,.055),fixedGlass);pane.position.set(x,2.2,z);scene.add(pane);});
+        const handleMat=new THREE.MeshStandardMaterial({color:0xe5edf6,metalness:.92,roughness:.16});
+        const makePanel=(side)=>{
+          const group=new THREE.Group();group.position.set(side==='left'?-1.225:1.225,0,z);
+          const pane=new THREE.Mesh(new THREE.BoxGeometry(2.45,4.35,.075),glassMat.clone());pane.position.y=2.2;pane.userData.isGlassDoor=true;group.add(pane);doorMeshes.push(pane);
+          const edgeGeo=new THREE.BoxGeometry(.055,4.35,.11);
+          [-1.2,1.2].forEach(x=>{const edge=new THREE.Mesh(edgeGeo,frameMat);edge.position.set(x,2.2,0);group.add(edge);});
+          const top=new THREE.Mesh(new THREE.BoxGeometry(2.45,.055,.11),frameMat);top.position.set(0,4.36,0);group.add(top);
+          const bottom=new THREE.Mesh(new THREE.BoxGeometry(2.45,.055,.11),frameMat);bottom.position.set(0,.04,0);group.add(bottom);
+          const handle=new THREE.Mesh(new THREE.CylinderGeometry(.026,.026,.82,12),handleMat);handle.position.set(side==='left'?.96:-.96,2.2,.12);group.add(handle);
+          scene.add(group);doorGroups[side]={group,closedX:group.position.x,openX:side==='left'?-3.75:3.75};
+        };
+        makePanel('left');makePanel('right');
+        const track=new THREE.Mesh(new THREE.BoxGeometry(5.1,.035,.28),new THREE.MeshStandardMaterial({color:0x91a5bf,metalness:.8,roughness:.24}));track.position.set(0,.12,z);scene.add(track);
+        const signCanvas=document.createElement('canvas');signCanvas.width=1200;signCanvas.height=240;const ctx=signCanvas.getContext('2d');const grad=ctx.createLinearGradient(0,0,1200,240);grad.addColorStop(0,'#101a2d');grad.addColorStop(1,'#202b43');ctx.fillStyle=grad;ctx.fillRect(0,0,1200,240);ctx.fillStyle='#d7ff70';ctx.font='700 70px Arial';ctx.textAlign='center';ctx.fillText('REWIND.PH',600,105);ctx.fillStyle='#d8e1f1';ctx.font='26px monospace';ctx.fillText('WELCOME / ENTER THE MUSEUM',600,165);const signTex=new THREE.CanvasTexture(signCanvas);const sign=new THREE.Mesh(new THREE.PlaneGeometry(6.1,1.22),new THREE.MeshBasicMaterial({map:signTex}));sign.position.set(0,5.45,z+.08);scene.add(sign);
+        const glow=new THREE.PointLight(0xffe7c8,1.6,18,2);glow.position.set(0,6.1,z+1.2);scene.add(glow);
+      }
+      function setDoorsOpen(open){doorsOpen=!!open;$('#doorToggle').textContent=doorsOpen?'Doors: Open':'Doors: Closed';$('#doorToggle').setAttribute('aria-pressed',String(doorsOpen));}
+      function applyDoorPositions(){const t=doorProgress*doorProgress*(3-2*doorProgress);Object.values(doorGroups).forEach(d=>{d.group.position.x=d.closedX+(d.openX-d.closedX)*t;});}
+      function toggleDoors(){setDoorsOpen(!doorsOpen);}
+      function makeCreditsTexture(){
+        const canvas=document.createElement('canvas');canvas.width=1600;canvas.height=900;const ctx=canvas.getContext('2d');
+        const grad=ctx.createLinearGradient(0,0,1600,900);grad.addColorStop(0,'#17243b');grad.addColorStop(.55,'#0c1424');grad.addColorStop(1,'#11182a');ctx.fillStyle=grad;ctx.fillRect(0,0,1600,900);
+        ctx.fillStyle='#72e2ff';ctx.fillRect(0,0,1600,13);ctx.fillStyle='#d7ff70';ctx.font='600 27px monospace';ctx.fillText('REWIND.PH  /  THE PEOPLE BEHIND THE EXPERIENCE',76,90);
+        ctx.fillStyle='#f7f8ff';ctx.font='800 74px Arial';ctx.fillText('GROUP 2',76,190);ctx.fillStyle='#aebbd2';ctx.font='28px Arial';ctx.fillText('RESEARCH  ·  DESIGN  ·  DEVELOPMENT',80,244);
+        ctx.strokeStyle='rgba(255,255,255,.16)';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(80,285);ctx.lineTo(1520,285);ctx.stroke();
+        const columns=[teamMembers.slice(0,4),teamMembers.slice(4)];
+        columns.forEach((members,col)=>members.forEach((m,i)=>{
+          const x=col===0?90:835,y=360+i*122;
+          ctx.fillStyle=col===0?'#d7ff70':'#72e2ff';ctx.beginPath();ctx.arc(x+18,y-10,13,0,Math.PI*2);ctx.fill();
+          ctx.fillStyle='#f5f7ff';ctx.font='700 35px Arial';ctx.fillText(m.name,x+52,y);
+          ctx.fillStyle='#b7c3d8';ctx.font='25px Arial';ctx.fillText(m.role,x+52,y+39);
+        }));
+        ctx.fillStyle='rgba(255,255,255,.12)';ctx.fillRect(80,820,1440,2);ctx.fillStyle='#9ba9c2';ctx.font='22px monospace';ctx.fillText('YESTERDAY’S CULTURE. TODAY’S IDENTITY.',80,865);
+        return new THREE.CanvasTexture(canvas);
+      }
+      function addCreditsWall(){
+        const frameMat=new THREE.MeshStandardMaterial({color:0x33435f,metalness:.72,roughness:.28});
+        const frame=new THREE.Mesh(new THREE.BoxGeometry(13.8,6.2,.28),frameMat);frame.position.set(0,4.65,-69.62);scene.add(frame);
+        const board=new THREE.Mesh(new THREE.PlaneGeometry(13.45,5.85),new THREE.MeshBasicMaterial({map:makeCreditsTexture()}));board.position.set(0,4.65,-69.455);scene.add(board);
+        const glow=new THREE.PointLight(0xffebd4,1.45,19,2);glow.position.set(0,8.0,-66.6);scene.add(glow);
+        [-6.55,6.55].forEach(x=>{const accent=new THREE.Mesh(new THREE.BoxGeometry(.035,5.6,.04),new THREE.MeshBasicMaterial({color:0x72e2ff}));accent.position.set(x,4.65,-69.38);scene.add(accent);});
+      }
+      function buildScene(){
+        scene=new THREE.Scene();scene.background=new THREE.Color(0x080c16);scene.fog=new THREE.Fog(0x080c16,34,105);
+        camera=new THREE.PerspectiveCamera(80,window.innerWidth/window.innerHeight,.1,160);camera.position.set(0,1.65,10.5);camera.rotation.order='YXZ';
+        renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.8));renderer.setSize(window.innerWidth,window.innerHeight);renderer.outputEncoding=THREE.sRGBEncoding;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.08;stage.appendChild(renderer.domElement);
+        scene.add(new THREE.HemisphereLight(0xdce7ff,0x1a2436,.92));const key=new THREE.DirectionalLight(0xfff1dc,.48);key.position.set(-4,10,7);scene.add(key);
+        const floor=new THREE.Mesh(new THREE.PlaneGeometry(18,86),new THREE.MeshStandardMaterial({color:0x171e2e,roughness:.36,metalness:.28}));floor.rotation.x=-Math.PI/2;floor.position.set(0,0,-30);scene.add(floor);
+        const grid=new THREE.GridHelper(86,43,0x33415e,0x202b42);grid.position.set(0,.015,-30);scene.add(grid);
+        addWall(-9,-30,86);addWall(9,-30,86);
+        const back=new THREE.Mesh(new THREE.BoxGeometry(18,9.4,.35),new THREE.MeshStandardMaterial({color:0x10182a,roughness:.9}));back.position.set(0,4.7,-70);scene.add(back);
+        addCeilingAndLighting();addEntrance();addCreditsWall();
+        const lobbyGlow=new THREE.PointLight(0xa99bff,1.5,30,2);lobbyGlow.position.set(0,5.2,8);scene.add(lobbyGlow);
+        roomZones.forEach((zone)=>{
+          const color=roomAccents[zone.id];const strip=new THREE.Mesh(new THREE.BoxGeometry(17.4,.025,21.2),new THREE.MeshBasicMaterial({color:new THREE.Color(color),transparent:true,opacity:.10}));strip.position.set(0,.035,(zone.start+zone.end)/2);scene.add(strip);
+          const roomLight=new THREE.PointLight(0xffecd8,1.15,26,2);roomLight.position.set(0,7.2,(zone.start+zone.end)/2);scene.add(roomLight);
+          addPortal(zone.start-.2,color,zone.title);
+          const list=DATA.artifacts.filter(a=>a.room===zone.id);
+          list.forEach((a,j)=>{
+            const side=j%2===0?-1:1;const z=zone.start-3.2-j*3.8;const frame=new THREE.Mesh(new THREE.BoxGeometry(5.05,3.3,.22),new THREE.MeshStandardMaterial({color:0x28344c,metalness:.42,roughness:.34}));frame.position.set(side*8.62,2.75,z);frame.rotation.y=side===-1?Math.PI/2:-Math.PI/2;scene.add(frame);
+            const texture=makeBoardTexture(a);const board=new THREE.Mesh(new THREE.PlaneGeometry(4.75,3.0),new THREE.MeshBasicMaterial({map:texture,side:THREE.DoubleSide}));board.position.set(side*8.48,2.75,z);board.rotation.y=side===-1?Math.PI/2:-Math.PI/2;board.userData.artifactId=a.id;scene.add(board);boardMeshes.push(board);
+            const spot=new THREE.SpotLight(0xfff0d8,1.55,15,Math.PI/5,.68,1.5);spot.position.set(side*6.9,8.15,z);spot.target.position.set(side*8.35,2.8,z);scene.add(spot);scene.add(spot.target);
+            const glow=new THREE.PointLight(new THREE.Color(color),.35,7,2);glow.position.set(side*7.35,3.8,z);scene.add(glow);
+          });
+        });
+        raycaster=new THREE.Raycaster();initialized=true;applyDoorPositions();
+      }
+      function getCurrentZone(){const z=camera?camera.position.z:0;return roomZones.find(zone=>z<=zone.start+.5&&z>=zone.end-.5)||roomZones[0];}
+      function updateRoomUI(){
+        if(creditsFocus&&camera&&camera.position.z<-54&&camera.position.z>-59){$('#museumRoomPill').textContent='CREDITS / GROUP 2';$('#museumHudTitle').textContent='MEET THE TEAM';$('#museumHudText').textContent='The people who researched, designed, and developed the Rewind.PH virtual museum.';$$('.room-jump[data-jump-room]').forEach(b=>b.classList.remove('active'));$('#creditsJump').classList.add('active');return;}
+        creditsFocus=false;$('#creditsJump').classList.remove('active');const zone=getCurrentZone();$('#museumRoomPill').textContent=zone.title;$('#museumHudTitle').textContent=zone.title;$('#museumHudText').textContent=zone.desc;$$('.room-jump[data-jump-room]').forEach((b,i)=>b.classList.toggle('active',roomZones[i].id===zone.id));
+      }
+      function handleSceneClick(clientX,clientY,center=false){
+        if(!raycaster||!camera)return false;
+        const point=center?new THREE.Vector2(0,0):new THREE.Vector2((clientX/window.innerWidth)*2-1,-(clientY/window.innerHeight)*2+1);
+        raycaster.setFromCamera(point,camera);
+        const doorHit=raycaster.intersectObjects(doorMeshes,false)[0];if(doorHit){toggleDoors();return true;}
+        const boardHit=raycaster.intersectObjects(boardMeshes,false)[0];if(boardHit&&boardHit.object.userData.artifactId){if(document.pointerLockElement)document.exitPointerLock();openArtifact(boardHit.object.userData.artifactId);return true;}
+        return false;
+      }
+      function selectArtwork(){return handleSceneClick(0,0,true);}
+      function animate(now){
+        raf=requestAnimationFrame(animate);if(!renderer||!camera)return;const dt=Math.min((now-lastTime)/1000||.016,.05);lastTime=now;
+        const speed=(keys.shift?7.5:4.3)*dt;const forward=new THREE.Vector3(-Math.sin(yaw),0,-Math.cos(yaw));const right=new THREE.Vector3(Math.cos(yaw),0,-Math.sin(yaw));
+        if(keys.w||keys.arrowup)camera.position.addScaledVector(forward,speed);if(keys.s||keys.arrowdown)camera.position.addScaledVector(forward,-speed);if(keys.a||keys.arrowleft)camera.position.addScaledVector(right,-speed);if(keys.d||keys.arrowright)camera.position.addScaledVector(right,speed);
+        camera.position.x=Math.max(-7.5,Math.min(7.5,camera.position.x));camera.position.z=Math.max(-67.5,Math.min(12.5,camera.position.z));camera.rotation.set(pitch,yaw,0,'YXZ');
+        const target=doorsOpen?1:0;doorProgress+=(target-doorProgress)*Math.min(1,dt*2.7);if(Math.abs(target-doorProgress)<.001)doorProgress=target;applyDoorPositions();renderer.render(scene,camera);updateRoomUI();
+      }
+      function resize(){if(!renderer||!camera)return;camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight);}
+      function initialize3D(){
+        if(initialized)return true;if(!window.THREE)return false;
+        try{
+          buildScene();window.addEventListener('resize',resize);
+          document.addEventListener('pointerlockchange',()=>$('#museumHelp').style.opacity=document.pointerLockElement?'0.18':'1');
+          renderer.domElement.addEventListener('click',e=>{
+            if(performance.now()-lastTouchHandled<450)return;
+            if(document.pointerLockElement===renderer.domElement){if(!handleSceneClick(0,0,true)&&renderer.domElement.requestPointerLock){} }
+            else if(!handleSceneClick(e.clientX,e.clientY,false)&&renderer.domElement.requestPointerLock){renderer.domElement.requestPointerLock();}
+          });
+          document.addEventListener('mousemove',e=>{if(document.pointerLockElement===renderer.domElement){yaw-=e.movementX*.0022;pitch-=e.movementY*.0022;pitch=Math.max(-1.15,Math.min(1.15,pitch));}});
+          renderer.domElement.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'){renderer.domElement.setPointerCapture(e.pointerId);renderer.domElement._touch={x:e.clientX,y:e.clientY,moved:false};}});
+          renderer.domElement.addEventListener('pointermove',e=>{const t=renderer.domElement._touch;if(e.pointerType==='touch'&&t){const dx=e.clientX-t.x,dy=e.clientY-t.y;if(Math.abs(dx)+Math.abs(dy)>5)t.moved=true;yaw-=dx*.006;pitch=Math.max(-1.15,Math.min(1.15,pitch-dy*.006));t.x=e.clientX;t.y=e.clientY;}});
+          renderer.domElement.addEventListener('pointerup',e=>{const t=renderer.domElement._touch;if(e.pointerType==='touch'&&t){if(!t.moved){handleSceneClick(e.clientX,e.clientY,false);lastTouchHandled=performance.now();}renderer.domElement._touch=null;}});
+          raf=requestAnimationFrame(animate);return true;
+        }catch(err){console.error('3D gallery could not initialize:',err);return false;}
+      }
+      function enterMuseum(){
+        shell.classList.add('open');document.body.style.overflow='hidden';fallback.classList.remove('show');stage.style.display='block';
+        if(!initialize3D()){stage.style.display='none';fallback.classList.add('show');$('#doorToggle').hidden=true;}
+        else{$('#doorToggle').hidden=false;camera.position.set(0,1.65,10.5);yaw=0;pitch=.24;camera.rotation.set(pitch,yaw,0,'YXZ');doorProgress=0;applyDoorPositions();setDoorsOpen(false);setDoorsOpen(true);creditsFocus=false;lastTime=performance.now();if(!raf)raf=requestAnimationFrame(animate);}
+      }
+      function exitMuseum(){shell.classList.remove('open');document.body.style.overflow='';if(document.pointerLockElement)document.exitPointerLock();if(raf){cancelAnimationFrame(raf);raf=0;}setDoorsOpen(false);}
+      $$('[data-enter-museum]').forEach(b=>b.addEventListener('click',enterMuseum));$('#museumExit').addEventListener('click',exitMuseum);
+      $('#doorToggle').addEventListener('click',toggleDoors);
+      $('#fallbackBrowse').addEventListener('click',()=>{exitMuseum();$('#archive').scrollIntoView({behavior:'smooth'});});
+      $$('.room-jump[data-jump-room]').forEach((b)=>b.addEventListener('click',()=>{const i=Number(b.dataset.jumpRoom),zone=roomZones[i];if(camera){creditsFocus=false;camera.position.set(0,1.65,zone.start-1.3);yaw=0;pitch=0;camera.rotation.set(pitch,yaw,0,'YXZ');updateRoomUI();}}));
+      $('#creditsJump').addEventListener('click',()=>{if(camera){creditsFocus=true;camera.position.set(0,1.65,-56.5);yaw=0;pitch=0;camera.rotation.set(pitch,yaw,0,'YXZ');updateRoomUI();}});
+      document.addEventListener('keydown',e=>{const k=e.key.toLowerCase();if(['w','a','s','d','arrowup','arrowdown','arrowleft','arrowright','shift'].includes(k)){keys[k]=true;if(k.startsWith('arrow'))e.preventDefault();}});
+      document.addEventListener('keyup',e=>{keys[e.key.toLowerCase()]=false;});
+      $$('#mobilePad [data-key]').forEach(b=>{const k=b.dataset.key;b.addEventListener('pointerdown',e=>{e.preventDefault();keys[k]=true;});['pointerup','pointerleave','pointercancel'].forEach(ev=>b.addEventListener(ev,()=>keys[k]=false));});
+    })();
+  </script>
+</body>
+</html>
